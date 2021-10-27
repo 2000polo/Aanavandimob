@@ -1,0 +1,255 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+.main-wrapper{
+    width: 100vw;
+    height: 100vh;
+}
+
+.fa{
+    height: 24px;
+}
+
+nav .head{
+    color: rgba(0, 75, 96, 1);
+}
+
+.mb-p{
+    padding: .5rem .3rem;
+}
+
+nav{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    background-color: rgb(255, 255, 255);
+    height: 8vh;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1) ,
+                0px 4px 6px -2px rgba(0,0,0,0.05) ;
+}
+
+button{
+    padding: .5rem 1rem;
+    border: none;
+    background-color: rgba(0, 75, 96, 1);
+    color: white;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 300px;
+}
+
+.hero-section{
+    margin-top: 8vh;
+    background-color: rgba(0, 75, 96, 1);
+    
+    color: white; 
+}
+
+.hero-content{
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.primary-btn{
+    background-color: rgba(221, 69, 90, 1);
+}
+
+.secondary-btn{
+    background-color: white;
+    color: rgba(0, 75, 96, 1);
+}
+
+.secondary-btn, .primary-btn{
+    min-width: 120px;
+    margin-top: 1.5rem;
+}
+
+.blog-section{
+    background-color: rgba(1, 144, 186, 1);
+    color: white;
+}
+
+.blog-content{
+    margin-bottom: 1.5rem;
+}
+
+.horizontal-scroll{
+    width: 100%;
+    overflow: scroll;
+    display: flex;
+    /* flex-direction: row; */
+}
+
+.blog-card{
+    min-width: 150px;
+    height: 170px;
+    background-color: turquoise;
+    background-image: url("./assets/blog-image.jpg");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    margin-right: .5rem;
+}
+
+.meta-data{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    background-image: linear-gradient(180deg,rgba(0, 0, 0, 0),rgb(0, 0, 0));
+    padding: 5px;
+}
+
+.meta-data p{
+    font-size: .9rem;
+}
+
+.meta-data small{
+    font-size: .7rem;
+    color:rgb(172, 172, 172);
+}
+
+.h-scroll-wrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.fa-chevron-left, .fa-chevron-right{
+    padding: 0 .2rem;
+}
+
+.team-card{
+    margin-right: 1rem;
+    margin-top: 1rem;
+}
+
+.member-img{
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background-color: rgb(0, 119, 255);
+    background-image: url('./assets/profile.png');
+    background-size: cover;
+}
+
+.emp-data{
+    margin-top: .5rem;
+}
+
+.emp-data, p small{
+    text-align: center;
+}
+
+.emp-data p{
+    font-size: .9rem;
+}
+
+.emp-data small{
+    font-size: .7rem;
+    color:rgb(39, 39, 39);
+}
+
+.footer-wrapper{
+    width: 100%;
+    min-height: 200px;
+    background-color: rgba(0, 75, 96, 1);
+    padding: 1.5rem .5rem .25rem .5rem;
+    color: white;
+    justify-content: start;
+}
+
+footer{
+    width: 100%;
+}
+
+.row{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.head{
+    padding-bottom: .25rem;
+    
+}
+
+footer ul{
+    list-style: none;
+    margin-top: 1rem;
+}
+
+footer ul .link-head{
+    padding-bottom: .25rem;
+}
+
+footer li{
+    font-size: .7rem;
+    color: rgb(192, 192, 192);
+    padding-bottom: .15rem;
+}
+
+.logo-desc{
+    width: 10pc;
+    font-weight: normal;
+    font-size: .7rem;
+    color: rgb(192, 192, 192);
+}
+
+.social-links h5{
+    text-align: end;
+    padding-bottom: .25rem;
+}
+
+span i{
+    padding-left: .5rem;
+}
+
+.copy-right{
+    text-align: center;
+    color: rgb(192, 192, 192);
+    font-size: .7rem;
+    padding-top: 1.5rem;
+}
+
+@media only screen and (min-width: 750px){
+    .mb-p{
+        padding: .5rem 10rem;
+    }
+}
+
+@media only screen and (min-width: 1000px){
+    .mb-p{
+        padding: .5rem 13rem;
+    }
+}
